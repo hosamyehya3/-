@@ -1,14 +1,15 @@
 import React from 'react'
 import { data } from 'react-router-dom';
 
-export default function Card2({array}) {
+export default function Card2({array , index , handle}) {
 let {title , excerpt , date , category , image , readTime } = array
 let {name , avatar , role} = array.author
 
 
   return <>
-      <article className="group card overflow-hidden">
-            <a className="block" href="/blog/mastering-golden-hour-photography" data-discover="true">
+      <article onClick={()=>{handle(index)}}
+       className="group card overflow-hidden">
+            <a className="block" data-discover="true">
               <div className="relative h-52 overflow-hidden">
                 <img alt={title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" src={image} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -38,7 +39,6 @@ let {name , avatar , role} = array.author
               </div>
             </a>
           </article>
-  
   
   
   

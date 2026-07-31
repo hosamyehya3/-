@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import Card2 from '../Card2/Card2'
+import Avatars from '../Avatars/Avatars';
+import WhoUs from '../WhoUs/WhoUs';
 
 export default function About() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -522,6 +524,15 @@ let [numbercards , setnumbercards] = useState(28)
   let pagefive = result.splice(6)
   let pagesix = pagefive.splice(6)
   console.log(newcard);
+   function findindex(index){
+        console.log(index);
+        
+    }
+
+
+
+
+
   function change() {
     setCurrentPage(1)
     setcard(newcard)
@@ -586,11 +597,6 @@ function allcards(){
       setnumbercards(result6.length)
 
 }
-
-
-
-
-
   return <>
     <div className="min-h-screen py-20 bg-[#0a0a0a]">
       <div className="relative py-20 overflow-hidden">
@@ -642,9 +648,7 @@ function allcards(){
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-          {card.map((card) => { return <Card2 key={card.id} array={card} /> })}
-
-
+          {card.map((card , index) => { return <Card2 handle={findindex} index={index} key={card.id} array={card} /> })}
 
 
         </div>

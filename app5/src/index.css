@@ -98,3 +98,19 @@ button:focus {
 .hidden{
     display: none;
 }
+.moving{
+    transition: all .3s linear;
+
+}
+.moving:hover{
+    transform: translateY(-3px);
+}
+.movingAction:hover{
+    color: #E17100;
+    border: 1px solid #E17100;
+}
+.box{
+    width: fit-content;
+    height:fit-content;
+    background-color: #2A180B;
+}

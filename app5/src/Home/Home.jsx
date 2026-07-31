@@ -646,7 +646,7 @@ export default function Home() {
                     </div>
                   </div>
 <div className='grid container mx-auto sm:grid-cols-2 lg:grid-cols-3 gap-8'>
-  {avatars.map((one)=>{ return <Card id={one.id} info={one}/>})}
+  {avatars.map((one)=>{ return <Card key={one.id} id={one.id} info={one}/>})}
 </div>
 
                 </section>
@@ -666,7 +666,7 @@ export default function Home() {
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
             </svg>تواصل معنا</a>
-            <a className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent border-2 border-white/40 text-white font-semibold rounded-xl hover:bg-white hover:text-[#0a0a0a] transition-all duration-300" href="/blog" data-discover="true">تصفح المقالات</a>
+            <a className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent border-2 border-white/40 text-white font-semibold rounded-xl hover:bg-white hover:text-[#0a0a0a] transition-all duration-300" href="/about" data-discover="true">تصفح المقالات</a>
             </div>
             </div>
             </section>          

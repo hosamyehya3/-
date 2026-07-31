@@ -2,8 +2,10 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { faHome, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
-
-export default function Avatars() {
+import About from '../About/About';
+export default function Avatars(props) {
+ 
+    
     let arr = [
         {
             "id": 1,
@@ -651,7 +653,7 @@ export default function Avatars() {
                                     <div className="w-10 h-10 bg-orange-500/10 rounded-xl flex items-center justify-center border border-orange-500/30">
                                         <i class="fa-solid fa-list text-orange-500"></i>
                                     </div>
-                                    <h3 clclassNameass="font-bold text-white">محتويات المقال</h3>
+                                    <h3 className="font-bold text-white">محتويات المقال</h3>
                                 </div>
                                 <nav className="space-y-2">
                                     <a href="#section-0" className="flex items-center gap-3 p-3 rounded-xl text-neutral-400 hover:text-orange-500 hover:bg-orange-500/5 transition-all duration-300 group">
