@@ -526,7 +526,7 @@ let [numbercards , setnumbercards] = useState(28)
   console.log(newcard);
    function findindex(index){
         console.log(index);
-        
+      
     }
 
 
@@ -648,7 +648,7 @@ function allcards(){
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-          {card.map((card , index) => { return <Card2 handle={findindex} index={index} key={card.id} array={card} /> })}
+          {card.map((card , index) => { return <Card2  handle={findindex} index={index} key={card.id} array={card} /> })}
 
 
         </div>
